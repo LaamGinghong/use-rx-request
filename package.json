@@ -1,0 +1,58 @@
+{
+  "name": "typescript_template",
+  "version": "0.0.0",
+  "description": "A typescript project template.",
+  "keywords": [
+    "typescript","ts","tempalte"
+  ],
+  "homepage": "https://github.com/LaamGinghong/rx-request/blob/main/README.md",
+  "bugs": {
+    "url": "https://github.com/LaamGinghong/rx-request/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LaamGinghong/rx-request.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "LaamGinghong",
+    "url": "https://github.com/LaamGinghong"
+  },
+  "main": "index.js",
+  "scripts": {
+    "setup": "rm -rf node_modules && pnpm install",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.{ts, js}": [
+      "prettier --write",
+      "eslint --quiet --fix"
+    ]
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^13.2.1",
+    "@commitlint/config-angular": "^13.2.0",
+    "@types/lodash-es": "^4.17.5",
+    "@typescript-eslint/eslint-plugin": "^4.33.0",
+    "@typescript-eslint/parser": "^4.33.0",
+    "eslint": "^7",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-jest": "^24.6.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^7.0.2",
+    "lint-staged": "^11.2.2",
+    "prettier": "^2.4.1",
+    "rxjs": "^7.4.0",
+    "typescript": "^4.4.3"
+  },
+  "peerDependencies": {
+    "rxjs": "^7.4.0"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "dependencies": {
+    "lodash-es": "^4.17.21"
+  }
+}
